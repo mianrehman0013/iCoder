@@ -1,0 +1,9 @@
+.img-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    padding: 9px;
+    margin: 1px;
+}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="stack.css">
+
+    <title>iCoder</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Technology</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Write for Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control mx-2 me-2 my-lg-0" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0 " type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModal">Login to iCoder</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="signupModal">Get an iCoder Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1><b>Privacy Policy</b></h1>
+        <p><b>Introduction:</b></p>
+        <p>Welcome to iCoder. At iCoder, we are committed to protecting
+            your privacy and ensuring that your personal information is handled with care. This Privacy Policy outlines
+            how we collect, use, disclose, and safeguard your personal information when you visit our website and
+            interact with our services.
+            By using our website, you consent to the practices described in this Privacy Policy. Please take the time to
+            read this policy carefully to understand our practices regarding your personal information.</p>
+            <br>
+            <h1><b>Information We Collect:</b></h1>
+            <p><b>Personal Information:</b></p>
+            <p>We may collect personal information that you voluntarily provide to us, such as:</p>
+            <p><b>Name:</b> When you register for an account or subscribe to our newsletter.</p>
+            <p><b>Email Address:</b>  To send you updates, newsletters, and other communications.</p>
+            <p><b>Contact Information:</b>  Including phone numbers or postal addresses, when required for specific services.</p>
+            <br>
+            <p><b>Usage Information:</b></p>
+            <p>We automatically collect certain information about your use of our website, including:</p>
+            <p><b>IP Address:</b> Your IP address and device information to analyze user trends, administer the site, and gather demographic information.</p>
+            <p><b>Device Information:</b>  Information about your device, such as its type, model, operating system, and browser.</p>
+            <p><b>Log Data:</b>  Details about your visits to our website, including the pages you viewed, the time and date of your visit, and the duration of your stay.</p>
+            <br>
+            <p><b>Cookies and Tracking Technologies:</b></p>
+            <p>We use cookies and similar tracking technologies to enhance your experience on our website. Cookies are small files that are placed on your computer or mobile device. They help us collect information such as:</p>
+            <p><b>Session Cookies:</b>  Used to operate our website and enable certain features.</p>
+            <p><b>Preference Cookies:</b>  Remember your settings and preferences for future visits.</p>
+            <p><b>Analytics Cookies:</b>  Allow us to track website usage and performance.</p>
+            <p>You can control cookies through your browser settings and opt-out of certain tracking technologies. However, disabling cookies may impact your experience on our website.</p>
+            <br>
+            <p><b>How We Use Your Information:</b></p>
+            <p>We use the information collected for various purposes, including but not limited to:</p>
+            <p><b>Providing Services:</b>  To deliver the services you request, such as processing orders, responding to inquiries, or providing information.</p>
+            <p><b>Communication:</b>  To send you updates, newsletters, promotional materials, and other relevant information.</p>
+            <p><b>Analytics:</b>  To understand how our website is used, track user trends, and improve our services.</p>
+            <p><b>Personalization:</b>  To customize your experience and provide content and features that are tailored to your interests.</p>
+            <p><b>Legal Compliance:</b>  To comply with applicable laws, regulations, and legal processes.</p>
+            <p><b>Security:</b>  To protect our website, users, and third parties from fraud, abuse, and security risks.</p>
+            <br>
+            <h5>Children's Privacy:</h5>
+            <p>Our website is not intended for use by individuals under the age of 13. We do not knowingly collect or solicit personal information from children. If you believe we have inadvertently collected information from a child, please contact us to have the information removed.</p>
+            <br>
+            <h5>Changes to this Privacy Policy:</h5>
+            <p>We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will post any changes on this page with a revised "Last Updated" date. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.</p>
+            <br>
+            <p><b>Consent:</b></p>
+            <p>By using our website, you consent to the terms of this Privacy Policy.</p>
+            
+
+    </div>
+
+
+    <footer class="container">
+        <p>© 2021-2023 iCoder, Inc. · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+        <p class="float-end"><a href="#">Back to top</a></p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

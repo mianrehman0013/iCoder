@@ -1,0 +1,21 @@
+.img-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    padding: 12px;
+    margin: 12px;
+}
+.main p{
+    padding: 12px;
+}
+.main h1{
+    padding: 10px;
+}
+.main h2{
+    padding: 10px;
+}
+.main h4{
+    padding: 10px;
+}
